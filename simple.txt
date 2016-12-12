@@ -1,0 +1,122 @@
+Steps taken to outline how I completed this assignment
+
+
+C:\Users\Owner\desktop\testing [master ≡]> cd ..
+C:\Users\Owner\desktop [master +99 ~0 -0 !]> basic_repo
+The term 'basic_repo' is not recognized as the name of a cmdlet, function, scri
+pt file, or operable program. Check the spelling of the name, or if a path was
+included, verify that the path is correct and try again.
+At line:1 char:11
++ basic_repo <<<<
+    + CategoryInfo          : ObjectNotFound: (basic_repo:String) [], CommandN
+   otFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+C:\Users\Owner\desktop [master +99 ~0 -0 !]> md basic_repo
+
+
+    Directory: C:\Users\Owner\desktop
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        12/11/2016   7:03 PM            basic_repo
+
+
+C:\Users\Owner\desktop [master +99 ~0 -0 !]> dir
+
+
+    Directory: C:\Users\Owner\desktop
+
+
+Mode                LastWriteTime     Length Name
+----                -------------     ------ ----
+d----        12/11/2016   7:03 PM            basic_repo
+d----        12/19/2015   4:52 PM            CHROME
+d----        12/11/2016   5:05 PM            test
+d----        12/11/2016   6:24 PM            TESTING
+d----         12/3/2016   2:06 PM            Test_website
+-a---         12/5/2016   6:39 PM       2333 Chrome App Launcher.lnk
+-a---        11/30/2016  10:20 AM     376345 Dojo info.docx
+-a---         12/3/2016   1:54 PM       1533 Fake_Blog.html
+-a---        12/11/2016   4:27 PM       2178 Git Shell.lnk
+-a---        12/11/2016   4:26 PM        308 GitHub.appref-ms
+-a---        10/14/2013   7:39 PM        399 My Yahoo!.url
+-a---         12/3/2016   1:58 PM        523 my_page.html
+-a---         8/11/2016   4:43 PM    3030581 PO_SO Master Sheet.xlsm
+-a---         8/12/2016   8:14 AM    5762048 Premier Bath Component Master 04.1
+                                             4.2016.xls
+-a---         8/12/2016   8:14 AM     654336 Q3 2016 INVENTORY.xls
+-a---        11/30/2016  10:53 AM        918 Sublime Text 3.lnk
+-a---        12/19/2015   4:59 PM      13519 win-install_Chrome OS_1.0.exe - Sh
+                                             ortcut.lnk
+
+
+C:\Users\Owner\desktop [master +99 ~0 -0 !]> cd basic_repo
+C:\Users\Owner\desktop\basic_repo [master +99 ~0 -0 !]> git init
+Initialized empty Git repository in C:/Users/Owner/Desktop/basic_repo/.git/
+C:\Users\Owner\desktop\basic_repo [master]> git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+C:\Users\Owner\desktop\basic_repo [master]> copy null index.html
+Copy-Item : Cannot find path 'C:\Users\Owner\desktop\basic_repo\null' because i
+t does not exist.
+At line:1 char:5
++ copy <<<<  null index.html
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Owner\desktop\basic_re
+   po\null:String) [Copy-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyI
+   temCommand
+
+C:\Users\Owner\desktop\basic_repo [master]> touch index.html
+C:\Users\Owner\desktop\basic_repo [master +1 ~0 -0 !]> touch style.css
+C:\Users\Owner\desktop\basic_repo [master +2 ~0 -0 !]> basic.txt
+The term 'basic.txt' is not recognized as the name of a cmdlet, function, scrip
+t file, or operable program. Check the spelling of the name, or if a path was i
+ncluded, verify that the path is correct and try again.
+At line:1 char:10
++ basic.txt <<<<
+    + CategoryInfo          : ObjectNotFound: (basic.txt:String) [], CommandNo
+   tFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+C:\Users\Owner\desktop\basic_repo [master +2 ~0 -0 !]> touch basic.txt
+C:\Users\Owner\desktop\basic_repo [master +3 ~0 -0 !]> git add .
+C:\Users\Owner\desktop\basic_repo [master +3 ~0 -0 ~]> git commit -m "added 3 fi
+les"
+[master (root-commit) 108ba2c] added 3 files
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 basic.txt
+ create mode 100644 index.html
+ create mode 100644 style.css
+C:\Users\Owner\desktop\basic_repo [master]> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   basic.txt
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\Owner\desktop\basic_repo [master +0 ~2 -0 !]> git add .
+C:\Users\Owner\desktop\basic_repo [master +0 ~2 -0 ~]> git commit -m "updated ba
+sic.txt and index.html"
+[master 2ac072f] updated basic.txt and index.html
+ 2 files changed, 20 insertions(+)
+C:\Users\Owner\desktop\basic_repo [master]> git remote add origin https://github
+.com/aboldendojo/basic_repo.git
+C:\Users\Owner\desktop\basic_repo [master]> git push -u origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 802 bytes | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/aboldendojo/basic_repo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+C:\Users\Owner\desktop\basic_repo [master ≡]> touch simple.txt
+C:\Users\Owner\desktop\basic_repo [master ≡ +1 ~1 -0 !]>

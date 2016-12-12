@@ -1,1 +1,3 @@
 Working on basic git commands. 
+
+Adding additional comments to the files to commit changes. 
